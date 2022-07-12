@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 8px;
+        text-align: center;
+        color: white;
+      }
+      .attribution a {
+        color: white;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <header>
+          <div class="header-profile">
+            <div class="header-profile-avatar">
+              <img src="./images/image-jeremy.png" alt="image-jeremy" />
+            </div>
+            <div class="header-profile-details">
+              <p>Report for</p>
+              <h1>Jeremy Robson</h1>
+            </div>
+          </div>
+          <div class="header-profile-route">
+            <a href="index.html">Daily</a>
+            <a href="weekly.html">Weekly</a>
+            <a href="monthly.html">Monthly</a>
+          </div>
+        </header>
+        <section>
+          <article>
+            <div class="article-work-design"></div>
+            <div class="article-content">
+              <div class="article-content-col1">
+                <p class="title-work"></p>
+                <div class="dot">
+                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#BBC0FF"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="article-content-col2">
+                <h1 class="current-work"></h1>
+                <div class="timeframe">
+                  <p>Last Week - <span class="previous-work"></span></p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="article-play-design"></div>
+            <div class="article-content">
+              <div class="article-content-col1">
+                <p class="title-play"></p>
+                <div class="dot">
+                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#BBC0FF"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="article-content-col2">
+                <h1 class="current-play"></h1>
+                <div class="timeframe">
+                  <p>Last Week - <span class="previous-play"></span></p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="article-study-design"></div>
+            <div class="article-content">
+              <div class="article-content-col1">
+                <p class="title-study"></p>
+                <div class="dot">
+                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#BBC0FF"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="article-content-col2">
+                <h1 class="current-study"></h1>
+                <div class="timeframe">
+                  <p>Last Week - <span class="previous-study"></span></p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="article-exercise-design"></div>
+            <div class="article-content">
+              <div class="article-content-col1">
+                <p class="title-exercise"></p>
+                <div class="dot">
+                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#BBC0FF"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="article-content-col2">
+                <h1 class="current-exercise"></h1>
+                <div class="timeframe">
+                  <p>Last Week - <span class="previous-exercise"></span></p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="article-social-design"></div>
+            <div class="article-content">
+              <div class="article-content-col1">
+                <p class="title-social"></p>
+                <div class="dot">
+                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#BBC0FF"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="article-content-col2">
+                <h1 class="current-social"></h1>
+                <div class="timeframe">
+                  <p>Last Week - <span class="previous-social"></span></p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="article-self-care-design"></div>
+            <div class="article-content">
+              <div class="article-content-col1">
+                <p class="title-self-care"></p>
+                <div class="dot">
+                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill="#BBC0FF"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="article-content-col2">
+                <h1 class="current-self-care"></h1>
+                <div class="timeframe">
+                  <p>Last Week - <span class="previous-self-care"></span></p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/ajormoses">AJOR MOSES</a>.
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
